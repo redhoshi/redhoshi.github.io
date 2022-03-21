@@ -1,1 +1,0 @@
-# redhoshi.github.io
