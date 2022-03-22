@@ -2281,6 +2281,7 @@ input, select, textarea {
 				text-align: center;
 			}
 
+
 		.icon.alt {
 			display: inline-block;
 			border: solid 1px;
@@ -2848,6 +2849,7 @@ input, select, textarea {
 			.features li > :last-child {
 				margin-bottom: 0;
 			}
+			/*ここ*/
 			.features li .image {
 				display: inline-block;
 				margin-left: 0em;
@@ -3716,6 +3718,21 @@ input, select, textarea {
 					height: 200px;
 					width: 400px;
 				}
+				.features li .image {
+					display: inline-block;
+					margin-left: 0em;
+					margin-bottom: 1em;
+					padding: 0.65em;
+					border-radius: 100%;
+					color: #dddddd;
+					border: solid 1px;
+				}
+		
+					.features li .image img {
+						display: block;
+						border-radius: 100%;
+						width: 8em;
+					}
 		}
 
 		@media screen and (max-width: 480px) {
@@ -3732,6 +3749,21 @@ input, select, textarea {
 					height: 150px;
 					width: 300px;
 				}
+				.features li .image {
+					display: inline-block;
+					margin-left: 0em;
+					margin-bottom: 1em;
+					padding: 0.65em;
+					border-radius: 100%;
+					color:#dddddd;
+					border: solid 1px;
+				}
+		
+					.features li .image img {
+						display: block;
+						border-radius: 100%;
+						width: 8em;
+					}
 
 		}
 
@@ -3758,6 +3790,21 @@ input, select, textarea {
 							height: 150px;
 							width: 300px;
 						}
+						.features li .image {
+							display: inline-block;
+							margin-left: 0em;
+							margin-bottom: 1em;
+							padding: 0.65em;
+							border-radius: 100%;
+							color: #dddddd;
+							border: solid 1px;
+						}
+				
+							.features li .image img {
+								display: block;
+								border-radius: 100%;
+								width: 8em;
+							}
 
 		}
 
