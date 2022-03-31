@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 
 body {
 	line-height: 1;
+	margin-bottom: 50px;
 }
 
 ol, ul {
@@ -84,8 +85,8 @@ input, select, textarea {
 
 	@media screen and (max-width: 480px) {
 
-		html, body {
-			min-width: 320px;
+		html, .body {
+			min-width: 320px; 
 		}
 
 	}
@@ -238,7 +239,6 @@ input, select, textarea {
 		h1 {
 			font-size: 2em;
 		}
-
 	}
 
 	sub {
@@ -581,7 +581,10 @@ input, select, textarea {
 				}
 
 		@media screen and (max-width: 1680px) {
-
+			
+			body {
+				margin-bottom: 20px;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -826,7 +829,9 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 1280px) {
-
+			body {
+				margin-bottom: 100px;
+			}
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1071,7 +1076,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 980px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -1316,7 +1320,6 @@ input, select, textarea {
 		}
 
 		@media screen and (max-width: 736px) {
-
 			.row {
 				display: flex;
 				flex-wrap: wrap;
@@ -2679,7 +2682,7 @@ input, select, textarea {
 			font-size: 1em;
 			letter-spacing: -0.025em;
 			text-align: left;
-			font-family: "Source Sans Pro",游明朝体, monospace;
+			font-family: "Source Sans Pro","游明朝体", monospace;
 		}
 		header.major ol li{
 			padding-bottom: 1em;
