@@ -7,6 +7,24 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
+:root {
+	--fontSize: 16px;
+	--linkColor: #3562a0;
+	--textColor: #333;
+	/* color preset */
+	--mainColor: #FFC145;
+	--mainDarkColor: #5B5F97;
+	--mainLightColor: #e9d5da;
+	--subColor: #b8d200;
+	--subDarkColor: ;
+	--subLightColor: ;
+	/* width preset */
+	--gutter: 1.3rem;
+	--gap: 3rem;
+	--spacing: 1rem;
+	--contentWidth: 960px;
+  }
+
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -183,6 +201,7 @@ input, select, textarea {
 	}
 	p {
 		margin: 0 0 1em 0;
+		font-size: 1.0em;
 	}
 
 		p.content {
@@ -200,7 +219,7 @@ input, select, textarea {
 	h1, h2, h3, h4, h5, h6 {
 		font-weight: 300;
 		line-height: 1.5;
-		margin: 0 0 0.7em 0;
+		margin: 0 0 0.6em 0;
 		letter-spacing: -0.025em;
 	}
 
@@ -223,7 +242,10 @@ input, select, textarea {
 	}
 
 	h4 {
-		font-size: 1.1em;
+		font-size: 1.25em;
+		padding: 0.25em 0.5em;
+		background: transparent;
+		border-left: solid 5px var(--mainDarkColor);
 	}
 
 	h5 {
@@ -3395,6 +3417,15 @@ input, select, textarea {
 		color: #636363;
 		border-radius: 0.25em;
 	}
+	#main .sep-2{
+		display: flex;
+		margin: 10px 0;
+		justify-content: space-between;
+	}
+	.sep-2 .item {
+		margin: 5px;
+		padding: 20px 10px;
+	  }
 
 		#main input, #main select, #main textarea {
 			color: #636363;
@@ -3681,6 +3712,9 @@ input, select, textarea {
 			#main .subimg img{ /*mainのsubimgのimgクラス*/
 				height: 300px;
 				width: 600px;
+			}
+			#main .visimg img{ /*mainのsubimgのimgクラス*/
+				width: 100%;
 			}
 
 		@media screen and (max-width: 1280px) {

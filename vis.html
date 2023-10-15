@@ -1,0 +1,106 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+	<title>teacher training course</title>
+	<link rel=”apple-touch-icon” href=”images/apple-touch-icon.png” sizes=”180×180″>
+	<link rel="icon" href="images./favicon.ico">
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="stylesheet" type="text/css"
+		href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/styles/default.min.css">
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js"></script>
+	<script type="text/javascript">hljs.initHighlightingOnLoad();</script>
+
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+	<div id="wrapper">
+		<header class="about">
+			<header id="header">
+				<h1>Visualization</h1>
+				<p>Spotify APIを用いたグラフの可視化</p>
+				<dd><a href="index.html">Home</a> > <a href>Visualization</a></dd>
+			</header>
+		</header>
+
+		<div id="main">
+			<section id="content" class="main">
+				<h4>Visualization</h4>
+				<div class="sep-2">
+					<p class="item">ビジュアライゼーションの授業課題で作成したウェブサイトである。Flutter on the webを用いてgithub,
+						firebase上でデプロイした。データはSpotify
+						APIを用いてTwiceのアーティストIDからアルバムに関する情報(ex.特徴量)を取得した。Spotify APIの取得方法は<a
+							href="https://developer.spotify.com/documentation/web-api/">こちら</a>から。</br></br>
+						右のグラフの可視化は<a href="https://env-22d9b.web.app/">こちら</a>から。</br>
+						グラフを可視化するにあたり以下のライブラリを使用しました。</br></br>
+						Synfunction, 詳細は<a href="https://pub.dev/packages/syncfusion_flutter_charts">こちら</a>から。</br>
+						Graphic, 詳細は<a href="https://pub.dev/packages/graphic">こちら</a>から。
+					</p>
+					<span class="visimg item"><img src="images/vis-all.png" alt="" /></span>
+				</div>
+				<h4>Get spotify data</h4>
+				<div class="">
+					<p class="item">
+						Spotify APIを使うためにはまずClient IDとClient Secretを取得する必要がある。Spotifyのアカウントを作成し、ログインする。
+						Spotify for DevelopersからDashboardを開き、CREATE AN APPからAPP name(アプリの名前)とAPP
+						description(アプリの説明)を入力し、規約をチェックしてCREATEする。
+						DashboardからID等を参照する。lib直下にkeyフォルダを作成してその中にapikey.dartを作成する。idとkeyを設定したらメインで呼び出す。
+						<pre>
+							<code class="dart">/* apikey.dart */
+String api_id = 'CLIENT_ID';
+String api_key = 'CLIENT_SECRET';
+
+/* spotify.dart */
+import 'key/apikey.dart';
+String APIid = api_id;
+String APIkey = api_key;</code>
+						</pre>
+						次に
+						<pre>
+							<code class="dart">
+							</code>
+						</pre>
+					</p>
+				</div>
+			</section>
+			</span>
+		</div>
+
+		<footer id="footer">
+			<section>
+				<h2>Contact</h2>
+				<dl class="alt">
+					<dt>Email</dt>
+					<dd>akaki.shiho.ss[-at]alumni.tsukuba.ac.jp</dd>
+				</dl>
+				<ul class="icons">
+					<li><a href="https://twitter.com/hoshi__ho" class="icon brands fa-twitter alt"><span
+								class="label">Twitter</span></a></li>
+					<li><a href="https://github.com/redhoshi" class="icon brands fa-github alt"><span
+								class="label">GitHub</span></a></li>
+					<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+				</ul>
+			</section>
+			<p class="copyright">&copy; 2022 Redhoshi's Portfolio. Design:<a href="https://html5up.net/">HTML5 UP</a>
+			</p>
+		</footer>
+
+		<!-- Scripts -->
+		<script src="assets/js/jquery.min.js"></script>
+		<script src="assets/js/jquery.scrollex.min.js"></script>
+		<script src="assets/js/jquery.scrolly.min.js"></script>
+		<script src="assets/js/browser.min.js"></script>
+		<script src="assets/js/breakpoints.min.js"></script>
+		<script src="assets/js/util.js"></script>
+		<script src="assets/js/main.js"></script>
+	</div>
+
+</body>
+
+</html>
