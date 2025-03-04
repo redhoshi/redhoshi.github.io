@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reflect on Your Action</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+        body {
+            background-color: #000;
+            color: #ff00ff;
+            font-family: 'Press Start 2P', cursive;
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        .grid-item {
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border: 2px solid #ff00ff;
+            box-shadow: 0px 0px 10px #ff00ff;
+        }
+        .glitch-text {
+            font-size: 2em;
+            font-weight: bold;
+            text-transform: uppercase;
+            position: relative;
+            color: #ff00ff;
+        }
+        .glitch-text::before, .glitch-text::after {
+            content: attr(data-text);
+            position: absolute;
+            left: 0;
+            top: 0;
+            opacity: 0.8;
+        }
+        .glitch-text::before {
+            color: #ff00ff;
+            transform: translate(-2px, -2px);
+            clip-path: inset(0 0 50% 0);
+        }
+        .glitch-text::after {
+            color: #00ffff;
+            transform: translate(2px, 2px);
+            clip-path: inset(50% 0 0 0);
+        }
+        img {
+            width: 100%;
+            height: auto;
+            border: 2px solid #ff00ff;
+        }
+        .matrix {
+            font-size: 1em;
+            color: #fff;
+            text-transform: uppercase;
+        }
+        @media (max-width: 768px) {
+            .grid {
+                grid-template-columns: 1fr;
+                padding: 10px;
+            }
+            body {
+                margin: 10px;
+                padding: 10px;
+            }
+            .glitch-text {
+                font-size: 1.5em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="glitch-text" data-text="Lulu's Folly">Lulu's Folly</header>
+    <div class="grid">
+        <div class="grid-item">
+            <p class="matrix">CAN YOU CHANGE MY TEMPER?</p>
+            <img src="images/varpowerwave/a.jpg" alt="Vaporwave Image">
+            <p>YOU CANNOT UNDERSTAND WHAT PISSES ME OFF....</p>
+        </div>
+        <div class="grid-item">
+            <img src="images/varpowerwave/b.jpg" alt="Cyber Eye">
+            <h2 class="glitch-text" data-text="Trust Isn’t A Toy">Trust Isn’t A Toy</h2>
+            <p>YOU BROKE IT ONCE—IF YOU REALLY WANT IT BACK, YOU BETTER WORK FOR IT</p>
+        </div>
+        <div class="grid-item">
+            <h2 class="glitch-text" data-text="BE BETTER, NOT JUST SORRY">BE BETTER, NOT JUST SORRY</h2>
+            <img src="images/varpowerwave/c.jpg" alt="Digital Hands">
+            <p>SORRY MEANS NOTHING WITHOUT CHANGE. SHOW ME YOU’RE BETTER THAN THIS</p>
+        </div>
+        <div class="grid-item">
+            <p class="matrix">No EXCUSES, JUST GROWTH</p>
+            <img src="images/varpowerwave/d.jpg" alt="Retro Tech">
+            <p>STOP MAKING EXCUSES. IF YOU REALLY CARE, PROVE IT WITH ACTIONS, NOT WORDS. AND RESPECT ME THE WAY I DESERVE. IF YOU CAN’T RESPECT ME, THEN YOU’LL END UP REGRETTING LOSING ME. THINK ABOUT THAT</p>
+        </div>
+        <div>DO YOU WANT TO APOLOGIZE TO ME?</div>
+        <div class="button-container">
+            <a href="https://www.amazon.jp/hz/wishlist/ls/33F3QAJSD6AUX?ref_=wl_share" class="button">Yes</a>
+            <a href="https://youtu.be/VnmkoAmhTJo?si=KxH8iNvlcLJwwaP8" class="button">No</a>
+        </div>
+    </div>
+</body>
+
+
+@Copyright Shiho-Sama
+</html>
